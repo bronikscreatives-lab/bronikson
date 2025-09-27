@@ -164,7 +164,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Inquiry Type
                 </label>
@@ -183,7 +183,7 @@ const Contact = () => {
                   <option value="partnership">Partnership Inquiry</option>
                   <option value="other">Other</option>
                 </select>
-              </div>
+              </div> */}
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">

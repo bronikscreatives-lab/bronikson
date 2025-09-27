@@ -1,9 +1,8 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import { Mail, MapPin } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaPinterest } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { theme } = useTheme();
 
   return (
     <footer className="bg-gray-900 dark:bg-gray-950 text-white py-16">
@@ -21,24 +20,19 @@ const Footer = () => {
               that make education fun, engaging, and effective for young learners worldwide.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-400 hover:text-coral transition-colors">
+              <a href="#" className="text-gray-400 hover:text-coral transition-colors" aria-label="Facebook">
                 <div className="w-10 h-10 bg-gray-800 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-coral transition-colors">
-                  <span className="text-sm font-bold">f</span>
+                  <FaFacebook size={20} />
                 </div>
               </a>
-              <a href="#" className="text-gray-400 hover:text-coral transition-colors">
+              <a href="#" className="text-gray-400 hover:text-coral transition-colors" aria-label="Instagram">
                 <div className="w-10 h-10 bg-gray-800 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-coral transition-colors">
-                  <span className="text-sm font-bold">in</span>
+                  <FaInstagram size={20} />
                 </div>
               </a>
-              <a href="#" className="text-gray-400 hover:text-coral transition-colors">
+              <a href="#" className="text-gray-400 hover:text-coral transition-colors" aria-label="Pinterest">
                 <div className="w-10 h-10 bg-gray-800 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-coral transition-colors">
-                  <span className="text-sm font-bold">ig</span>
-                </div>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-coral transition-colors">
-                <div className="w-10 h-10 bg-gray-800 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-coral transition-colors">
-                  <span className="text-sm font-bold">tw</span>
+                  <FaPinterest size={20} />
                 </div>
               </a>
             </div>
@@ -82,17 +76,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-coral" />
-                <span className="text-gray-300">support@broniksEducational.com</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone size={18} className="text-coral" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">bronikscreatives@gmail.com</span>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin size={18} className="text-coral mt-1" />
+                <MapPin size={18} className="text-coral mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <div>456 Education Avenue</div>
-                  <div>Learning District, CA 90210</div>
+                  <div>Blk 5, Lot 12, Orchid Street</div>
+                  <div>Barangay Buhangin Davao City, Davao del Sur</div>
+                  <div>8000 Philippines</div>
                 </div>
               </li>
             </ul>
